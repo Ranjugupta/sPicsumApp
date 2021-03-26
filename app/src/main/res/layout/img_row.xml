@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/imgrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.ranju.taskapp.views.MyImageView
+            android:id="@+id/authImg"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_launcher_foreground" />
+
+        <com.ranju.taskapp.views.MyTextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/authName"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
